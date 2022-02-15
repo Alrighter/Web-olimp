@@ -1,0 +1,150 @@
+main{
+    min-height: 100vh;
+    margin-top: 65px;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+summary{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    min-height: 150px;
+}
+details{
+    min-height: 150px;
+    
+    margin: 20px;
+    width: 100%;
+    max-width: 655px;
+    min-width: 300px;
+    border: 2px solid black;
+}
+@keyframes details-show {
+    from {
+      opacity: 0;
+      transform: var(--details-translate, translateY(-0.5em));
+    }
+  }
+  
+details[open] > *:not(summary) {
+    animation: details-show 1s ease-out;
+}
+p{
+    margin: 0px;
+}
+hr{
+    width: 100%;
+    border-top: 2px solid black;
+}
+.book_gold{
+    border: 2px solid #B8A500;
+}
+.book_silver{
+    border: 2px solid #959595;
+}
+.book_bronze{
+    border: 2px solid #C89000;
+}
+.line_gold{
+    border-top: 2px solid #B8A500;
+}
+.line_silver{
+    border-top: 2px solid #959595;
+}
+.line_bronze{
+    border-top: 2px solid #C89000;
+}
+.info{
+    padding: 10px;
+}
+.info_title{
+    margin: 5px;
+    font-size: 40px;
+}
+.info_desc{
+    margin: 0px;
+    font-size: 30px;
+
+    color: grey;
+}
+.mark{
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-weight: 900;
+    font-size: 35px;
+    border-radius: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+    color: white;
+    
+    box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.25);
+}
+.mark_text{
+    margin-top: 23px;
+}
+.book_more{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.book_img{
+    max-width: 350px;
+    width: 100%;
+}
+.vote_text{
+    margin: 40px;
+    font-size: 25px;
+    color: grey;
+}
+.vote_mark{
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    border: 3px solid #000000;;
+}
+.vote_button{
+    margin-top: 15px;
+    width: 140px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 21px;
+    font-size: 16px;
+    background-color: white;
+    border: 3px solid #000000;;
+}
+.general_mark{
+    margin: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+@media only screen and (max-width: 800px){
+    summary{
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        min-height: 150px;
+    }
+    .info{
+        text-align: center;
+        width: 100%;
+    }
+    .mark{
+        margin: 20px;
+    }
+}
